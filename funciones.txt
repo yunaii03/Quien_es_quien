@@ -1,0 +1,51 @@
+import random
+
+
+
+#DICCIONARIO DE PERSONAS
+def dicci_pers():
+
+    dicci={
+    "Alejandro":{'sexo':'M','gafas':'yes','barba':'no','pendientes':'no','color_pelo':'marrón','gorra':'yes'},
+    "Sara"={'sexo':'F','gafas':'no','barba':'no','pendientes':'yes','color_pelo':'negra','gorra':'no'},
+    "Pedro"={'sexo':'M','gafas':'no','barba':'yes','pendientes':'yes','color_pelo':'rubio','gorra':'yes'},
+    "Kitsura"={'sexo':'F','gafas':'yes','barba':'no','pendientes':'no','color_pelo':'lila','gorra':'no'},
+    "Lewis"={'sexo':'M','gafas':'no','barba':'yes','pendientes':'yes','color_pelo':'negro','gorra':'yes'},
+    "Luis"={'sexo':'M','pelo_largo':'no','pelo_corto':'Yes','bigote':'No','calvo':'No'},
+    "Maricarmen"={'sexo':'F','pelo_largo':'es','pelo_corto':'No','bigote':'No','calvo':'No'},
+    "Alex"={'sexo':'M','pelo_largo':'no','pelo_corto':'yes','bigote':'Yes','calvo':'No'},
+    "Alejandra"={'sexo':'F','pelo_largo':'yes','pelo_corto':'No','bigote':'No','calvo':'No'},
+    "Joan"={'sexo':'M''pelo_largo':'yes','pelo_corto':'no','bigote':'Yes','calvo':'No'}}
+    }
+
+
+def personaje_especial(test): #seleccionamos el personaje especial de manera aleatoria.
+    z=random.randint(0,10)
+    personaje_especial=dicci[z]
+    return(personaje_especial)
+
+
+def opciones_pregunta(atributo,especial):    #Comprobamos si se cumple el atributo, y eliminamos los que cumplen con las caractaristicas.
+    if dicci[especial][atributo]=="yes":
+        print("Exacto, la persona cumple con esta caracteristica. ")
+        for x in range(len(dicci)):
+            if dicci[x][atributo]==atributo:
+                print(dicci[x],"Ha sido eliminado ya que cumple con tu pregunta")
+                dicci[x].pop()
+        print(dicci)
+        return(dicci)
+    elif dicci[especial][atributo]!="yes":
+    print("La persona no cumple con esta caracteristica.")
+
+
+
+
+
+
+
+
+
+
+
+
+

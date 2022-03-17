@@ -1,0 +1,35 @@
+from funciones import dicci_pers,personaje_especial, opciones_pregunta
+
+#QUIEN ES QUIEN
+dicci={
+    "Alejandro":{'sexo':'M','gafas':'yes','barba':'no','pendientes':'no','color_pelo':'marrón','gorra':'yes'},
+    "Sara"={'sexo':'F','gafas':'no','barba':'no','pendientes':'yes','color_pelo':'negra','gorra':'no'},
+    "Pedro"={'sexo':'M','gafas':'no','barba':'yes','pendientes':'yes','color_pelo':'rubio','gorra':'yes'},
+    "Kitsura"={'sexo':'F','gafas':'yes','barba':'no','pendientes':'no','color_pelo':'lila','gorra':'no'},
+    "Lewis"={'sexo':'M','gafas':'no','barba':'yes','pendientes':'yes','color_pelo':'negro','gorra':'yes'},
+    "Luis"={'sexo':'M','pelo_largo':'no','pelo_corto':'Yes','bigote':'No','calvo':'No'},
+    "Maricarmen"={'sexo':'F','pelo_largo':'es','pelo_corto':'No','bigote':'No','calvo':'No'},
+    "Alex"={'sexo':'M','pelo_largo':'no','pelo_corto':'yes','bigote':'Yes','calvo':'No'},
+    "Alejandra"={'sexo':'F','pelo_largo':'yes','pelo_corto':'No','bigote':'No','calvo':'No'},
+    "Joan"={'sexo':'M''pelo_largo':'yes','pelo_corto':'no','bigote':'Yes','calvo':'No'}}
+    }
+
+test=0
+print("Bienvenido al quien és quien, jugarás contra la IA Alexa. Tienes 14 personas diferentes. Para ver los atributos de tus personas, escribe la palabra atributos,")
+opc=input("Empiezas preguntando tu",who,"Escoge si quieres preguntar acerca del sexo, gafas, barba, pendientes, color_pelo, gorra, sombrero, pelo_largo, pelo_corto, bigote o calvo"))
+#Generamos el personaje especial
+pers_especial=personaje_especial(test)
+
+
+#Turno jugador 1
+ while opc!="exit: "
+    if opc!="exit":
+        x=input("Que atributo quieres consultar? ")
+        z=opciones_pregunta(x,pers_especial)
+
+    elif opc == "atributos": #hay que returnear el di
+        z=op
+        print(z)
+
+
+
